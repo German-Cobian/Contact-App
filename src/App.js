@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AddContact from './components/AddContact';
+import EditContact from './components/EditContact';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         </Route>
         
         <Route path="/edit/:id">
-          <h1>I am edit component</h1>
+          <EditContact />
         </Route>
 
       </Switch>
