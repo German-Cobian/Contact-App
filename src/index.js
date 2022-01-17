@@ -6,15 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux'; // Added in this feature
-import { createStore } from 'redux'; // Added in this feature
-import contactReducer from './redux/reducers/contactReducer'; // Added in this feature
-import { composeWithDevTools } from 'redux-devtools-extension'; // Added in this feature
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import contactReducer from './redux/reducers/contactReducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 
-const store = createStore(contactReducer, composeWithDevTools()) // Added in this feature
-
-// Provider added in this feature
+const store = createStore(contactReducer, composeWithDevTools())
 
 ReactDOM.render(
   <Provider store={store}>
@@ -27,7 +25,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

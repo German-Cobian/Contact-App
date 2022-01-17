@@ -1,18 +1,18 @@
-// All imports added in this feature
 import { useState } from "react";
-import { useSelector } from "react-redux" 
+import { useSelector, useDispatch } from "react-redux" // "useDispatch" added in this feature
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"; // Added in this feature
 import { toast } from "react-toastify";
 
 const AddContact = () => {
-  // All the following fields up to "return" added in this feature
+ 
   const [name, setName] = useState(''); 
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   
   const contacts = useSelector((state) => state); 
-  console.log(contacts)
+  const dispatch = useDispatch(); // Added in this feature
+  const history = useHistory(); // Added in this feature
 
-  // Validations
   const checkEmail = contacts.find(contact => contact.email === email && email);
   const checkNumber = contacts.find(contact => contact.number === parseInt(number));
 
@@ -27,6 +27,16 @@ const AddContact = () => {
     if(checkNumber) {
       return toast.error("This number already exists")
     }
+    // "data" added in this feature
+    const data = {
+      id: contacts[contacts.length -1].id + 1,
+      name,
+      email,
+      number
+    }
+    dispatch({type: 'ADD_CONTACT', payload: data}); // Added in this feature
+    toast.success("Contact entered successfully"); // Added in this feature
+    history.push("/"); // Added in this feature
   };
 
   return (
@@ -57,8 +67,6 @@ const AddContact = () => {
       </div>
     </div>
   )
-  // "form onSubmit={handleSubmit}" as well as "value={(whatever)} onChange={(e) => setName(e.target.value)}"
-  // added to name, email and number fields in this feature.
 }
 
 export default AddContact
