@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux" // "useDispatch" added in this feature
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min"; // Added in this feature
+import { useSelector, useDispatch } from "react-redux"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { toast } from "react-toastify";
 
 const AddContact = () => {
@@ -10,8 +10,8 @@ const AddContact = () => {
   const [number, setNumber] = useState('');
   
   const contacts = useSelector((state) => state); 
-  const dispatch = useDispatch(); // Added in this feature
-  const history = useHistory(); // Added in this feature
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const checkEmail = contacts.find(contact => contact.email === email && email);
   const checkNumber = contacts.find(contact => contact.number === parseInt(number));
@@ -27,16 +27,16 @@ const AddContact = () => {
     if(checkNumber) {
       return toast.error("This number already exists")
     }
-    // "data" added in this feature
+
     const data = {
       id: contacts[contacts.length -1].id + 1,
       name,
       email,
       number
     }
-    dispatch({type: 'ADD_CONTACT', payload: data}); // Added in this feature
-    toast.success("Contact entered successfully"); // Added in this feature
-    history.push("/"); // Added in this feature
+    dispatch({type: 'ADD_CONTACT', payload: data});
+    toast.success("Contact entered successfully");
+    history.push("/");
   };
 
   return (

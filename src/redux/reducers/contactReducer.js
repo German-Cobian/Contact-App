@@ -15,7 +15,6 @@ const initialState = [
 
 const contactReducer = (state = initialState, action) => {
   switch(action.type) {
-    // "case 'ADD_CONTACT':" added in this feature
     case 'ADD_CONTACT':
       state = [...state, action.payload];
       return state;
