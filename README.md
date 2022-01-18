@@ -31,31 +31,31 @@ To get a local copy up and running follow these simple example steps:
 The feature branches of the tutorial present versions of the app where specific components or functions
 were implemented.
 
-* feature1-navbar
+* `feature1-navbar`
 Implements the Navbar component which displays the navbar in the homepage.
 
-* feature2-homeComponent
+* `feature2-homeComponent`
 Implements the Home component which displays the content of the homepage, that is contact names, emails and numbers.
 
-* feature3-addContact
+* `feature3-addContact`
 Implements the addContact component which displays the form for inputing contact's names, emails and id numbers.
 
-* feature4-editContact
+* `feature4-editContact`
 Implements the editContact component which displays the form for inputing updates to contact's names, emails and id numbers.
 
-* feature5-addContactFunc
+* `feature5-addContactFunc`
 Implements the functions actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-* feature6-addContactActions
+* `feature6-addContactActions`
 Implements the functions actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-* feature7-displayContacts
+* `feature7-displayContacts`
 Implements the actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-* feature8-editContacts
+* `feature8-editContacts`
 Implements the actions and reducers (with their requisite functions) required for updating contact's names, emails and id numbers.
 
-* feature9-deleteContacts
+* `feature9-deleteContacts`
 Implements the actions and reducers (with their requisite functions) required for deleting contact's names, emails and id numbers.
 
 
