@@ -1,3 +1,5 @@
+// Entire EditContact component was added in this feature
+
 import { Link, useParams } from 'react-router-dom';
 
 const EditContact = () => {
