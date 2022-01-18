@@ -3,7 +3,6 @@
 A how-to on building a basic React-Redux app. The user can see the names, e-addresses, and id numbers of existing contacts, edit and delete these or add new ones. Since the purpose of the project is to show step-by-step how different functionalities are implemented in a React-Redux app the user will, according to which branch they checkout to, be able to see only a specific funtionality of the app completed. The project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "
 Fullyworld Web Tutorials."
 
-
 ## Built With
 
 * Semantic HTML
