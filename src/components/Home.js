@@ -1,3 +1,4 @@
+// Entire Home Component added in this feature
 import { Link } from 'react-router-dom';
 
 const Home = () => {
