@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux'; // Added in this feature
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-  const contacts = useSelector(state => state); //Added in this feature
+  const contacts = useSelector(state => state); 
 
   return (
     <div className="container">
@@ -11,7 +11,7 @@ const Home = () => {
         <div className="col-md-12 my-5 text-right">
           <Link to="add" className="btn btn-outline-dark">Add Contact</Link>
         </div>
-        <div className="col-md-8 mx-3">
+        <div className="col-md-10 mx-3">
           <table className="table table-hover">
             <thead className="text-white bg-dark text-center">
               <tr>
@@ -30,8 +30,8 @@ const Home = () => {
                   <td>{contact.email}</td>
                   <td>{contact.number}</td>
                   <td>
-                    <Link to={`/edit/${contact.id}`} className="btn btn-small btn-primary mr-2">Edit</Link>
-                    <button type="button" className="btn btn-small btn-danger">Delete</button>
+                    <Link to={`/edit/${contact.id}`} className="btn btn-small btn-primary mx-1">Edit</Link>
+                    <button type="button" className="btn btn-small btn-danger mx-1">Delete</button>
                   </td>
                 </tr>
               ))}

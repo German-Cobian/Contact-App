@@ -13,11 +13,15 @@ const AddContact = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const checkEmail = contacts.find(contact => contact.email === email && email);
-  const checkNumber = contacts.find(contact => contact.number === parseInt(number));
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const checkEmail = contacts.find(contact => contact.email === email && email);
+    const checkNumber = contacts.find(contact => contact.number === parseInt(number));
+
+
     if(!name || !email || !number) {
       return toast.warning("Please fill in all fields")
     }
@@ -59,7 +63,7 @@ const AddContact = () => {
               <input type="number" placeholder="Phone Number" className="form-control"
               value={(number)} onChange={(e) => setNumber(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group mt-3">
               <input type="submit" value="Add Contact" className="btn btn-block btn-dark" />
             </div>
           </form>
