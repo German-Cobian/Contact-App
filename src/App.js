@@ -18,10 +18,6 @@ function App() {
          <AddContact />
         </Route>
         
-        <Route path="/edit/:id">
-          <h1>I am edit component</h1>
-        </Route>
-
       </Switch>
     </div>
   );

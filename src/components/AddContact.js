@@ -1,3 +1,5 @@
+// The entire AddContact Component was added in this feature
+
 const AddContact = () => {
   return (
     <div className="container">
