@@ -57,7 +57,7 @@ const AddContact = () => {
       </div>
     </div>
   )
-  // "form onSubmit={handleSubmit}" as well as "value={(whatever)} onChange={(e) => setName(e.target.value)}"
+  // "form onSubmit={handleSubmit}" as well as "value={(whatever)} onChange={(e) => setWhatever(e.target.value)}"
   // added to name, email and number fields in this feature.
 }
 
