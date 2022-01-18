@@ -43,4 +43,6 @@ const Home = () => {
   )
 }
 
+// entire "<table>" element added in this feature
+
 export default Home
