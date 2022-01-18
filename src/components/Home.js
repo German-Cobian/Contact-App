@@ -1,9 +1,17 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'; // "useDispatch" added in this feature
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify'; // Added in this feature
 
 const Home = () => {
 
   const contacts = useSelector(state => state); 
+
+  // Everything below and up to "return" was added in this feature
+  const dispatch = useDispatch();
+  const deleteContact = (id) => {
+    dispatch({type: "DELETE-CONTACT", payload: id});
+    toast.success("Contact deleted successfully");
+  };
 
   return (
     <div className="container">
@@ -31,7 +39,7 @@ const Home = () => {
                   <td>{contact.number}</td>
                   <td>
                     <Link to={`/edit/${contact.id}`} className="btn btn-small btn-primary mx-1">Edit</Link>
-                    <button type="button" className="btn btn-small btn-danger mx-1">Delete</button>
+                    <button type="button" onClick={() => deleteContact(contact.id)} className="btn btn-small btn-danger mx-1">Delete</button>
                   </td>
                 </tr>
               ))}
@@ -42,5 +50,7 @@ const Home = () => {
     </div>
   )
 }
+
+// "onClick={() => deleteContact(contact.id)}" added in this feature
 
 export default Home
