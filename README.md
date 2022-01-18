@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Contact-App
 
-## Available Scripts
+A how-to on building a basic React-Redux app. The user can see the names, e-addresses, and id numbers of existing contacts, edit and delete these or add new ones. Since the purpose of the project is to show step-by-step how different functionalities are implemented in a React-Redux app the user will, according to which branch they checkout to, be able to see only a specific funtionality of the app completed. The project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "
+Fullyworld Web Tutorials."
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Semantic HTML
+* Javascript
+* Linters ((stylelint, eslint))
+* React
+* Redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup and Install
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Open your terminal - Windows: Win + R, then type cmd | Mac: Command + space, then type Terminal
+* Navigate to a directory of your choosing using the cd command
+* Run this command in your OS terminal: `git clone git@github.com:German-Cobian/Contact-App.git` to get a copy of the project
+* Navigate to the project's directory using the cd command
+* In the clone folder, run `npm install` and then `npm run build`
+* To fire up the server run `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Breakdown of Tutorial
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The feature branches of the tutorial present versions of the app where specific components or functions
+were implemented.
 
-### `npm run eject`
+* `feature1-navbar`
+Implements the Navbar component which displays the navbar in the homepage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* `feature2-homeComponent`
+Implements the Home component which displays the content of the homepage, that is contact names, emails and numbers.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `feature3-addContact`
+Implements the addContact component which displays the form for inputing contact's names, emails and id numbers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* `feature4-editContact`
+Implements the editContact component which displays the form for inputing updates to contact's names, emails and id numbers.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* `feature5-addContactFunc`
+Implements the functions actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-## Learn More
+* `feature6-addContactActions`
+Implements the functions actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* `feature7-displayContacts`
+Implements the actions and reducers (with their requisite functions) required for inputing contact's names, emails and id numbers.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `feature8-editContacts`
+Implements the actions and reducers (with their requisite functions) required for updating contact's names, emails and id numbers.
 
-### Code Splitting
+* `feature9-deleteContacts`
+Implements the actions and reducers (with their requisite functions) required for deleting contact's names, emails and id numbers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 **German Cobian**
 
-### Making a Progressive Web App
+* GitHub: [@German-Cobian](https://github.com/German-Cobian)
+* Twitter: [@GermanCobian1](https://twitter.com/GermanCobian1)
+* LinkedIn: [@german-cobian](https://www.linkedin.com/in/german-cobian/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/German-Cobian/Contact-App/issues).
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Acknowledgments
+
+* Fullyworld Web Tutorials channel on YouTube
+
+
+## 📝 License
+
+This project is [MIT](https://github.com/German-Cobian/Contact-App/blob/main/LICENSE) licensed.
