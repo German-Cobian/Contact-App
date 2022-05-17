@@ -12,7 +12,7 @@ const AddContact = () => {
   const contacts = useSelector((state) => state); 
   const dispatch = useDispatch();
   const history = useHistory();
-
+ 
   const checkEmail = contacts.find(contact => contact.email === email && email);
   const checkNumber = contacts.find(contact => contact.number === parseInt(number));
 
