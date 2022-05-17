@@ -14,7 +14,7 @@ A how-to on building a basic React-Redux app. The user can see the names, e-addr
 
 ..or add new ones.
 
-![Add contacts](/src/assets/.png?raw=true "Add contacts")
+![Add contacts](/src/assets/Add-contacts.png?raw=true "Add contacts")
 
 Since the purpose of the project is to show step-by-step how different functionalities are implemented in a React-Redux app the user will, according to which branch they checkout to, be able to see only a specific functionality of the app completed. The project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "Fullyworld Web Tutorials."
 
