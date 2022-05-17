@@ -1,13 +1,30 @@
 # Contact-App
 
-A how-to on building a basic React-Redux app. The user can see the names, e-addresses, and id numbers of existing contacts, edit and delete these or add new ones. Since the purpose of the project is to show step-by-step how different functionalities are implemented in a React-Redux app the user will, according to which branch they checkout to, be able to see only a specific funtionality of the app completed. The project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "
-Fullyworld Web Tutorials."
+A how-to on building a basic React-Redux app. The user can see the names, e-addresses, and id numbers of existing contacts, 
+
+![Show contacts](/src/assets/Show-contacts.png?raw=true "Show contacts")
+
+...edit,
+
+![Edit contacts](/src/assets/Edit-contacts.png?raw=true "Edit contacts")
+
+...delete, 
+
+![Delete contacts](/src/assets/Delete-contacts.png?raw=true "Delete contacts")
+
+..or add new ones.
+
+![Add contacts](/src/assets/.png?raw=true "Add contacts")
+
+Since the purpose of the project is to show step-by-step how different functionalities are implemented in a React-Redux app the user will, according to which branch they checkout to, be able to see only a specific functionality of the app completed. The project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "Fullyworld Web Tutorials."
+
 
 ## Built With
 
-* Semantic HTML
+* HTML
+* CSS
+* Bootstrap
 * Javascript
-* Linters ((stylelint, eslint))
 * React
 * Redux
 
@@ -79,7 +96,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-* Fullyworld Web Tutorials channel on YouTube
+This project is based on the tutorial video [React Redux Contact App | Redux Projects](https://youtu.be/DZ7AZuii9ZU) by "Fullyworld Web Tutorials."
 
 
 ## 📝 License
